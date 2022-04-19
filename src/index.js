@@ -5,10 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-import Calculator from "./components/Calculator.jsx"
+// import Calculator from "./components/Calculator.jsx"
 
 ReactDOM.render(
-  <Calculator/>,
+  <App/>,
   document.getElementById('root')
 );
 
