@@ -1,10 +1,36 @@
+// import React, { Component } from 'react';
+// import Navbar from './navbar';
+// import Budget from './components/Budget';
+// import { BudgetProvider } from './store';
+// import './App.css';
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <BudgetProvider>
+//         <div className="App">
+//         <Navbar />
+//         <div className="container my-5">
+//             <Budget />
+//         </div>
+//         </div>
+//       </BudgetProvider>
+//     );
+//   }
+// }
+
+// export default App;
+
+
+
 import React, { useState } from "react";
+import { EasybaseProvider, useEasybase } from 'easybase-react';
 
 import { AppProvider } from './context/AppContext';
 import Budget from './components/Budget';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
-import AddExpenseForm from './components/AddExpenseForm';
+import AddExpense from './components/AddExpense';
 import RemainingBudget from './components/Remaining';
 
 const Calculator = () => {
@@ -46,7 +72,7 @@ const Calculator = () => {
                     <h3 className='mt-3'>Add Expense</h3>
                     <div className='row mt-3'>
                         <div className='col-sm'>
-                            <AddExpenseForm />
+                            <AddExpense />
                         </div>
                     </div>
                     
