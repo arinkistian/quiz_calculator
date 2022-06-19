@@ -8,7 +8,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import Calculator from "./components/Calculator.jsx"
 
 ReactDOM.render(
-  <App/>,
+  <App />,
   document.getElementById('root')
 );
 
