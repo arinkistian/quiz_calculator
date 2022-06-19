@@ -7,7 +7,6 @@ class Login extends Component {
         email: '',
         password: '',
         fireErrors: ''
-
     }
 
     handleChange = e => {
@@ -19,9 +18,9 @@ class Login extends Component {
     login = e => {
         e.preventDefault();
         fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
-        .catch((error) => {
-            this.setState({fireErrors: error.message})
-        });
+            .catch((error) => {
+                this.setState({ fireErrors: error.message })
+            });
     }
 
     render() {
@@ -29,10 +28,10 @@ class Login extends Component {
             <div className="Error">
                 {this.state.fireErrors}
             </div> : null;
-            
+
         return (
             <>
-            {errorNotification}
+                {errorNotification}
                 <from>
                     <input type="text"
                         className="regField"
@@ -47,11 +46,12 @@ class Login extends Component {
                         value={this.state.password}
                         onChange={this.handleChange}
                         name="password" />
-                    
+
                     <input onClick={this.login} type="submit" className="btnSubmit" value="LOGIN" />
+                    {/* <input type="submit" className="btnSubmit" value="LOGIN" /> */}
                 </from>
             </>
-        )
+        );
     }
 }
 

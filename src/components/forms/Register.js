@@ -8,7 +8,6 @@ class Register extends Component {
         password: '',
         username: '',
         fireErrors: ''
-
     }
 
     handleChange = e => {
@@ -61,6 +60,7 @@ class Register extends Component {
                         name="password" />
 
                     <input onClick={this.register} type="submit" className="btnSubmit" value="REGISTER" />
+                    {/* <input type="submit" className="btnSubmit" value="REGISTER" /> */}
                 </from>
             </>
         )

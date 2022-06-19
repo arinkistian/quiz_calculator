@@ -1,4 +1,4 @@
-// import firebase from 'firebase'; ==> error kl make yg ini
+// // import firebase from 'firebase'; ==> error kl make yg ini
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
