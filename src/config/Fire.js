@@ -1,6 +1,8 @@
 // // import firebase from 'firebase'; ==> error kl make yg ini
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
+import { getFirestore } from "firebase/firestore";
+// import { getDatabase, ref, set } from "firebase/database";
 
 const config = {
     apiKey: "AIzaSyCzQjeh8sA4zwZMSnFWWaK1UgVIHwipju0",
@@ -13,4 +15,5 @@ const config = {
 }
 
 const fire = firebase.initializeApp(config);
-export default fire; 
+const db = getFirestore(fire);
+export default fire;
